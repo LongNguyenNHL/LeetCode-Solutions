@@ -26,7 +26,7 @@ class Solution {
             } else if (list1 == null && list2 != null) {
                 check.next = new ListNode(list2.val);
                 list2 = list2.next;
-            } else if (list1 != null && list2 == null) {
+            } else {
                 check.next = new ListNode(list1.val);
                 list1 = list1.next;
             }
